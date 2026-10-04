@@ -4,6 +4,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
+const cors = require('cors');
+
+// Đặt ngay bên dưới dòng const app = express();
+app.use(cors());
 const PORT = process.env.PORT || 5000;
 
 app.use(cors());
